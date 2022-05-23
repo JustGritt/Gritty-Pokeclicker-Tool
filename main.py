@@ -14,11 +14,12 @@ while True :
         p.position()
         print(p.position())
 
+    # Start autoclicker
     if k.is_pressed('2'):
+        print("Start clicking")
         while True : 
             p.click(p.position(), interval=0, clicks=5)
             t.sleep(0.001)
-            print("click")
 
             # Stop the current loop
             if k.is_pressed('3'):
